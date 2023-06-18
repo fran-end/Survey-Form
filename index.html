@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Emanero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Encuesta de Emanero</h1>
+            <p id="description">Te vamos a hacer algunas preguntas sobre el famoso rapero.</p>
+        </header>
+    <form action="mailto:francoespejo743@gmail.com" method="post" id="survey-form" enctype="text/plain">
+        <fieldset>
+        <label for="name" id="name-label">Nombre: </label><input type="text" id="name" required placeholder="Franco">
+        <label for="email" id="email-label">Email: </label><input type="email" id="email" required placeholder="blablabla@gmail.com">
+        <label for="number" id="number-label">¿Hace cuántos años escuchas a Emanero? </label><input type="number" id="number" min="1" max="20" placeholder="3">
+        <label for="dropdown">¿Cuál es tu album favorito?
+        <select name="dropdown" id="dropdown">
+            <option value="">(selecciona uno)</option>
+            <option value="1">Arjé</option>
+            <option value="2">Tres</option>
+            <option value="3">Tres Mil Millones de Años Luz</option>
+            <option value="4">Chernobyl</option>
+        </label>
+        </select>
+    </fieldset>
+    <fieldset>
+        <p class="test">¡Veamos cuánto sabés de tu artista favorito!</p>
+        <h4>¿Cuál es su verdadero nombre?</h4>
+        <label for="false-name"><input type="radio" name="emanero-name" id="false-name" value="Federico Lopez" class="inline">Federico Lopez</label>
+        <label for="true-name"><input type="radio" name="emanero-name" id="true-name" value="Federico Andrés Giannoni" class="inline">Federico Andrés Giannoni</label>
+        <label for="false-name"><input type="radio" name="emanero-name" id="false-name" value="Valentín Oliva" class="inline">Valentín Oliva</label>
+
+        <h4>¿Cuáles de estas NO son canciones de Emanero?</h4>
+        <label for="cambios"><input type="checkbox" name="song" id="cambios" value="cambios" class="inline">Cambios</label>
+        <label for="manicomio"><input type="checkbox" name="song" id="manicomio" value="Manicomio" class="inline">Manicomio</label>
+        <label for="mas-tenemos"><input type="checkbox" name="song" id="mas-tenemos" value="Más tenemos, más queremos" class="inline">Más tenemos, más queremos</label>
+        <label for="secreto-paraiso"><input type="checkbox" name="song" id="secreto-paraiso" value="Secreto Paraiso" class="inline">Secreto Paraiso</label>
+        <label for="protocolo"><input type="checkbox" name="song" id="protocolo" value="Protocolo" class="inline">Protocolo</label>
+        <label for="el-juego"><input type="checkbox" name="song" id="el-juego" value="El Juego" class="inline">El Juego</label>
+        <label for="xxxi"><input type="checkbox" name="song" id="xxxi" value="XXXI"class="inline">XXXI</label>
+        <label for="al-borde"><input type="checkbox" name="song" id="al-borde" value="Al Borde" class="inline">Al Borde</label>
+        <label for="tu-mejor-estudiante"><input type="checkbox" name="song" id="tu-mejor-estudiante" value="Tu Mejor Estudiante" class="inline">Tu Mejor Estudiante</label>
+    </fieldset>
+    <fieldset>
+
+        <label class="story" for="story">Contanos cómo descubriste a Emanero:
+            <textarea name="story" id="story" cols="30" rows="5" placeholder="Un amigo me recomendó sus canciones..." maxlength="230"></textarea>
+        </label>
+
+    </fieldset>
+        <input type="submit" value="Enviar" id="submit">
+
+
+        <nav class="footer">
+            <ul>
+                <li class="icon" id="copyright">© 2023 Emanero</li>
+
+                <li class="icon">
+                    <a href="https://open.spotify.com/artist/2BTS8Np1YzPQuXjgdlqsBB" target="_blank">
+                        <img src="img/spotify.svg" alt="spotify">
+                    </a>
+                </li>
+
+                <li class="icon">
+                    <a href="https://www.youtube.com/channel/UCAxdOQ8wuS8yUvlMeeWjBdw" target="_blank">
+                        <img src="img/youtube.svg" alt="youtube">
+                    </a>
+                </li>
+
+                <li class="icon">
+                    <a href="https://www.instagram.com/emanero/?hl=es" target="_blank">
+                        <img src="img/instagram.svg" alt="instagram">
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+    </form>
+
+</body>
+</html>

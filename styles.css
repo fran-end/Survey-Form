@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("img/emanero.png");
+    background-position: 0% 23%;
+    color: white;
+    font-family:'Kanit', sans-serif;
+    background-color: rgb(34, 32, 32);
+    font-size: 16px;
+    margin: 0;
+}
+
+label{
+    display:block;
+}
+
+input::placeholder{
+    color: rgba(200,200,200,1)
+}
+
+input:last-of-type {
+    color: black;
+  }
+
+  h1{
+    font-weight: 500;
+  }
+
+  p,label,h3{
+    font-weight: 300;
+  }
+
+
+.container{
+    width: 40%;
+    height: 100%;
+    background-image:linear-gradient(to right, rgba(16, 27, 16, 0.784) 60%, rgba(52, 50, 50, 0.05));
+    margin-bottom: -18px;
+    padding-bottom: 1em;
+    min-width: 450px;
+}
+
+h1{
+  margin: 0;
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 1em;
+}
+
+#description{
+text-align: center;
+font-style: italic;
+}
+
+#name, #email, #number{
+  margin-bottom: 1em;
+}
+
+#name, #email, #number, #dropdown, textarea{
+  border: 3.5px solid gray;
+  transition: border-color 0.5s ease;
+  outline: none;
+
+
+}
+#name:focus, #email:focus, #number:focus, #dropdown:focus, textarea:focus{
+  border-color: rgb(54, 97, 62);
+}
+
+.test{
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1.5em
+}
+
+form{
+    width: 20vw;
+    min-width: 380px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    
+  }
+
+  fieldset:nth-child(2){
+    padding-top: 1em;
+  }
+
+fieldset:last-of-type {
+    border-bottom: none;
+  }
+
+  input{
+    width: 95%;
+    height: 2em;
+    border-radius: 0.3em ;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding-left: 0.5em;
+    margin-right: 0.5rem;
+  }
+
+  select{
+    width: 99%;
+    height: 2.5em;
+    border-radius: 0.3em ;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding-left: 0.1em;
+  }
+
+  textarea{
+    display: block;
+    width: 95%;
+    margin-top: 1em ;
+    border-radius:0.3em ;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    max-width: 350px;
+    min-width: 350px;
+    min-height: 120px;
+    max-height: 120px;
+    padding-left: 0.2em;
+  }
+
+  textarea::placeholder{
+    color: rgba(200,200,200,1)
+}
+
+
+ #submit{
+    display: block;
+    width: 60%;
+    height: 2.5em;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: rgb(29, 54, 29);
+    color: white;
+    outline: none;
+  }
+
+  #submit:hover{
+    background-color: rgb(57, 91, 57);
+    transition: background-color 0.2s ease;
+  }
+
+  .inline {
+    width: unset;
+    vertical-align: middle;
+  }
+
+
+  ul{
+    margin-top: 5em;
+    padding: 0;
+  }
+
+  #copyright{
+    color: #CBCBCB;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-bottom: 3em;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  .icon{
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .icon:nth-child(n+2) {
+    display:block
+  }
+
+  .icon:nth-child(2) {
+    margin-top: 0.5em;
+  }
+
+  
+
+/*Media Query 1280*/
+
+  @media screen and (max-width: 1280px){
+    body{
+      background-position: 25% 23% ;
+}
+}
+
+
+/*Media Query 720*/
+
+
+@media screen and (max-width: 720px){
+    body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    padding-bottom: 0;
+    min-width:auto
+}
+
+#description{
+  width: 280px;
+  margin: 1em auto;
+  max-width: 280px;
+}
+
+form{
+    width:95%;
+    max-width: fit-content;
+    min-width: auto;
+}
+
+fieldset{
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.story{
+  text-align: center;
+}
+
+textarea{
+  width: 98%;
+  min-width: auto;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+#copyright{
+  display: inline-block;
+  position: relative;
+  left: 40px;
+  padding-bottom: 5%;
+}
+
+.icon{
+  display: inline-block;
+  position: relative;
+  right: 50px;
+}
+
+.icon:nth-child(n+2) {
+  display:inline;
+}
+
+.footer{
+  text-align: center;
+
+}
+
+}
